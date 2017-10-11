@@ -2,6 +2,12 @@
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
+## How to run this project
+
+To launch this project, either clone the repo or download the zip in the top right. extract the files to the location of your choice and open index.html in the web browser of your choice. You'll notice some motions happening automatically as Jasmine runs the tests on the site for you. Scrolling down to the bottom of the page will show you all relevant tests and their passing grades.
+
+The primary file modified for this project can be found in `jasmine/spec/feedreader.js`. You can check out the comments for a thorough explanation of the process for each test.
+
 
 ## Why this Project?
 
@@ -44,5 +50,5 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 17. No test should be dependent on the results of another.
 18. Callbacks should be used to ensure that feeds are loaded before they are tested.
 19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
+20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
