@@ -35,6 +35,7 @@ $(function() {
     it("have valid URLs", function() {
       // looping over allFeeds to check that each object has a url defined
       for (i = 0; i < allFeeds.length; i++) {
+        expect(allFeeds[i].url).toBeDefined();
         expect(allFeeds[i].url.length).not.toBe(0);
       }
     });
@@ -45,6 +46,7 @@ $(function() {
     it("have valid names", function() {
       // looping over allFeeds to check that each object has a name defined
       for (i = 0; i < allFeeds.length; i++) {
+        expect(allFeeds[i].name).toBeDefined();
         expect(allFeeds[i].name.length).not.toBe(0);
       }
     });
@@ -91,7 +93,7 @@ $(function() {
      * loadFeed() is async so we use done()
      * to make sure we've got the feed. */
     it("shows at least one .entry within the .feed container", function(done) {
-      var entries = $('.entry').length;
+      var entries = $('.feed .entry').length;
       expect(entries > 0).toBe(true);
       done();
     });
